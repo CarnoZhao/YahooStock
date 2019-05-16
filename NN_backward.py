@@ -20,17 +20,20 @@ LEARNING_RATE_BASE = 0.001
 LEANING_RATE_DECAY = 0.999
 REGULARIZER = 0.01
 
+
 def backward():
     '''
     backpropagation function
     learn the weight matrices (w1, w2) 
     '''
-    X, Y, sample_num, input_num, output_num, X_test, Y_test = NN_input.get_data()
+    X, Y, sample_num, input_num, output_num, X_test, Y_test =
+    NN_input.get_data()
     x = tf.placeholder(tf.float32, shape = (None, input_num))
     y = tf.placeholder(tf.float32, shape = (None, output_num))
     # make FAKE inputs to build the pipeline and add the real input at last
 
-    y_hat, w1, w2, b1, b2 = NN_forward.forward(x, y, input_num, output_num, REGULARIZER)
+    y_hat, w1, w2, b1, b2 = NN_forward.forward(x, y, input_num, output_num,
+    REGULARIZER)
     # estimation of y, and the weight matrix and the using the FAKE variable
 
     global_step = tf.Variable(0, trainable = False)
