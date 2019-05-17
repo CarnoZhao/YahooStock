@@ -18,11 +18,11 @@
 
     \renewcommand{\abstractname}{Introduction}
     \begin{abstract}
-        From Physics 77, we have learnt to make use of python to process,analyze and display data. Since our group have interested in stocks market, we decide to apply Python to Financial analysis.
+        From Physics 77, we have learnt to make use of python to process, analyze and display data. Since our group have interested in stocks market, we decide to apply Python to Financial analysis.
 
         Our object of study is stock price of the S\&P 500 Component Stocks. S\&P 500 Component Stocks comprises 505 common stocks issued by 500 large-cap companies and traded on American stock exchanges. 
 
-        Our goals are as shown: First, we want to explore the correlation among the stock prices of different companies. Second, we want to give advice on whether to buy the stocks or not. Third, we want to predict the stocks prices accurately.
+        Our goals are as follows: First, we want to explore the correlation among the stock prices of different companies. Second, we want to give advice on whether to buy the stocks or not. Third, we want to predict the stocks prices accurately.
     \end{abstract}
 
 
@@ -30,7 +30,7 @@
     \section{Method}
     
         \subsection{Data Retrieving}
-        With Python libraries as \verb!requests, BeautifulSoup, datetime! and \verb!pandas.datareader.data!, we easily get data on the S\&P 500 companies from the Yahoo Finance website and save them in csv. However, we met with a problem that we can't find stock price of Berkshire Hathaway (BRK.B). Later, we found out that Berkshire Hathaway was listed as BRK.B on Wikipedia from which we get all the tickers, but in Yahoo, we need to search Berkshire Hathaway as BRK-B.
+        With Python libraries as \verb!requests, BeautifulSoup, datetime! and \verb!pandas.datareader.data!, we easily get data on the S\&P 500 companies from the Yahoo Finance website and save them in csv. However, we meet with a problem that we can't find stock price of Berkshire Hathaway (BRK.B). Later, we find out that Berkshire Hathaway is listed as BRK.B on Wikipedia from which we get all the tickers, but in Yahoo, we need to search Berkshire Hathaway as BRK-B.
 
         Then to make these data easier to handle with, we compile them into \verb!pandas.DataFrame!.
 
